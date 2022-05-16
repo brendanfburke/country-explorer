@@ -20,6 +20,8 @@ const CountryIndex = (props) => {
 
 
     const loaded = () => {
+        console.log(countries[25])
+        console.log(countries[22])
         return (
             <div className="country-index">
                 {countries.map((country, idx) => {

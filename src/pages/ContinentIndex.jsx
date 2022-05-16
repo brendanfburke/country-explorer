@@ -32,6 +32,7 @@ const ContinentIndex = (props) => {
                             </Link>
                         )
                     }
+                    return null
                 })}
             </div>
             <div className="africa">
@@ -44,6 +45,7 @@ const ContinentIndex = (props) => {
                             </Link>
                         )
                     }
+                    return null
                 })}
             </div>
             <div className="asia">
@@ -56,6 +58,7 @@ const ContinentIndex = (props) => {
                             </Link>
                         )
                     }
+                    return null
                 })}
             </div>
             <div className="south-america">
@@ -68,6 +71,7 @@ const ContinentIndex = (props) => {
                             </Link>
                         )
                     }
+                    return null
                 })}
             </div>
             <div className="north-america">
@@ -80,6 +84,7 @@ const ContinentIndex = (props) => {
                             </Link>
                         )
                     }
+                    return null
                 })}
             </div>
             <div className="oceania">
@@ -92,6 +97,7 @@ const ContinentIndex = (props) => {
                             </Link>
                         )
                     }
+                    return null
                 })}
             </div>
             <div className="antarctica">
@@ -104,6 +110,7 @@ const ContinentIndex = (props) => {
                             </Link>
                         )
                     }
+                    return null
                 })}
             </div>
 

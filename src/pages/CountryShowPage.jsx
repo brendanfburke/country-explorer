@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
-import { Link } from "react-router-dom";
 
 const CountryShow = (props) => {
     const [countries, setCountries] = useState(null)
@@ -10,16 +9,16 @@ const CountryShow = (props) => {
 
     const url = 'https://restcountries.com/v3.1/name/'
 
-    const getCountries = async () => {
-        const response = await fetch(`${url}${params.id}`)
-        const data = await response.json()
-        setCountries(data)
-        console.log(data)
-    }
-
+    
     useEffect(() => {
+        const getCountries = async () => {
+            const response = await fetch(`${url}${params.id}`)
+            const data = await response.json()
+            setCountries(data)
+            console.log(data)
+        }
         getCountries()
-    }, [])
+    }, [params.id, url] )
 
 
 
