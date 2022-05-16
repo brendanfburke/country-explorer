@@ -28,6 +28,9 @@ const CountryShow = (props) => {
             <div className="country">
                 <h2>{country.name.common}</h2>
                 <h3>Official Name: {country.name.official}</h3>
+                <img className="show-page-flag" src={country.flags.svg} alt={`Flag of ${country.name.common}`} />
+                <p>{country.unMember}</p>
+
             </div>
         )
     }
