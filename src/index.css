@@ -20,3 +20,63 @@ code {
   height: 20vh;
   border: 1px solid black;
 }
+
+.flag-index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 4em;
+}
+
+.flag-index a {
+  text-decoration: none;
+}
+
+.continents-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.continents-container h2 {
+  font-size: 2em;
+}
+
+.continents-container button {
+  font-size: small;
+  background-color: lightgray;
+  color: black;
+  height: 4vh;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightsteelblue;
+  color: white;
+  padding: 15px;
+  font-size: 1em;
+}
+
+.nav a {
+  color: blue;
+  text-decoration: none;
+}
+
+.country-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.country-index a {
+  text-decoration: none;
+  color: black;
+}
+
+.country-index h2 {
+  width: 30px;
+}

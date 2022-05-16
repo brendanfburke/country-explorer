@@ -23,9 +23,8 @@ const CountryIndex = (props) => {
         return (
             <div className="country-index">
                 {countries.map((country, idx) => {
-                    console.log(country.name.common)
                     return (
-                        <Link to={`/${country.name.common}`} >
+                        <Link key={idx} to={`/${country.name.common}`} >
                             <h2>{country.name.common}</h2>
                         </Link>
                     )
