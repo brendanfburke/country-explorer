@@ -9,7 +9,7 @@ const Maps = (props) => {
     const center = useMemo(() => ({ lat: props.coordinates[0], lng: props.coordinates[1] }), [google]);
 
     const isLoaded = useLoadScript({
-        googleMapsApiKey: 'AIzaSyAectTvdzip71aBFMiZwsSpGYcDyyB4uDw'
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
     })
     
     if(!isLoaded) {
