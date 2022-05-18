@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 // import Maps from "../components/Maps";
 import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
-import { useMemo } from "react";
 
 const CountryShow = (props) => {
     const [countries, setCountries] = useState(null)
@@ -32,8 +31,7 @@ const CountryShow = (props) => {
     
     
     
-    
-    const isLoaded = useLoadScript({
+    useLoadScript({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
     })
     const loaded = () => {
@@ -55,9 +53,10 @@ const CountryShow = (props) => {
                 <h3>Official Name: {country.name.official}</h3>
                 <img className="show-page-flag" src={country.flags.svg} alt={`Flag of ${country.name.common}`} />
                 <p>In {country.name.common} they drive on the {country.car.side} side of the road</p>
+                <p>The population of {country.name.common} is <strong>{country.population}</strong>  </p>
                 {/* TODO: update the following line to have a conditional that doesn't render if the capital is blank */}
-                <p>The capital of {country.name.common} is {country.capital}</p>
-                <GoogleMap zoom={10} center={center} mapContainerClassName="map-container">
+                <p>The capital of {country.name.common} is <strong>{country.capital}</strong> </p>
+                <GoogleMap zoom={8} center={center} mapContainerClassName="map-container">
                     <Marker position={center} />
                 </GoogleMap>
                 

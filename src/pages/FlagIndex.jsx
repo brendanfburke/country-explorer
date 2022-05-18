@@ -20,6 +20,7 @@ const FlagIndex = (props) => {
 
 
     const loaded = () => {
+        countries.sort((a, b) => a.name.common.localeCompare(b.name.common))
         return (
             <div className="flag-index">
                 {countries.map((country, idx) => {
