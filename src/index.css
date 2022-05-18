@@ -125,3 +125,13 @@ code {
 .letter-category {
   font-size: 3em;
 }
+
+.search-box {
+  align-self: center;
+}
+
+.search-input {
+}
+
+.search-button {
+}
