@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Nav = (props) => {
 
@@ -26,7 +26,7 @@ const Nav = (props) => {
                     setSearch(e.target.value)
                 }} />
                 <Link to={`/search/${search}`} >
-                    <button className="search-button">Search</button>
+                    <button   className="search-button">Search</button>
                 </Link>
             </div>
         </div>

@@ -10,6 +10,7 @@ import ContinentIndex from './pages/ContinentIndex';
 import CountryIndex from './pages/CountryIndex';
 import CountryShow from './pages/CountryShowPage';
 import FlagIndex from './pages/FlagIndex';
+import SearchResults from './pages/SearchResults';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,9 @@ root.render(
          <Route path='/continents' element={<ContinentIndex />} />
          <Route path='/flags' element={<FlagIndex />} />
           <Route path=':id' element={<CountryShow />} />
+         <Route path='/search' element={<SearchResults />} >
+           <Route path=':id' element={<SearchResults />} />
+         </Route>
        </Route>
      </Routes>
     </Router>

@@ -36,7 +36,6 @@ const CountryShow = (props) => {
     })
     const loaded = () => {
         const center = { lat: countries[0].latlng[0], lng: countries[0].latlng[1] }
-        console.log(center)
         
     
         const country = countries[0]
