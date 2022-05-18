@@ -6,16 +6,17 @@ import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 
 const CountryShow = (props) => {
     const [countries, setCountries] = useState(null)
+    const [map, setMap] = useState(null)
 
     const params = useParams()
 
     const url = 'https://restcountries.com/v3.1/name/'
     
     
+    
     const isMapLoaded = useLoadScript({
             googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
         })
-        
     
     useEffect(() => {
         const getCountries = async () => {
@@ -24,7 +25,8 @@ const CountryShow = (props) => {
             setCountries(data)
         };
         getCountries();
-        
+        setMap(isMapLoaded)
+                
         
         
         
@@ -34,7 +36,8 @@ const CountryShow = (props) => {
     
     
     const loaded = () => {
-        const center = { lat: countries[0].latlng[0], lng: countries[0].latlng[1] }
+        let center
+        let zoom
         
     
         const country = countries[0]
@@ -42,8 +45,17 @@ const CountryShow = (props) => {
         
        if (!country.capital) {
            capital = <p>{country.name.common} has no capital</p>
+           center = { lat: countries[0].latlng[0], lng: countries[0].latlng[1] }
+           zoom = 8
        } else {
            capital = <p>The capital of {country.name.common} is <strong>{country.capital}</strong>  </p>
+           center = { lat: countries[0].capitalInfo.latlng[0], lng: countries[0].capitalInfo.latlng[1] }
+           zoom = 8
+       }
+
+       if (country.name.common === 'Antarctica') {
+           center = { lat: -66, lng: 89 }
+           zoom = 1
        }
 
        let mapLoader
@@ -51,7 +63,7 @@ const CountryShow = (props) => {
        if (!isMapLoaded) {
         mapLoader = <p>Loading your map</p>
        } else {
-           mapLoader = <GoogleMap zoom={8} center={center} mapContainerClassName="map-container">
+           mapLoader = <GoogleMap zoom={zoom} center={center} mapContainerClassName="map-container">
            <Marker position={center} />
        </GoogleMap>
        }
