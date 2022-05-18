@@ -6,6 +6,7 @@ import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 
 const CountryShow = (props) => {
     const [countries, setCountries] = useState(null)
+    // eslint-disable-next-line max-len
     const [map, setMap] = useState(null)
 
     const params = useParams()
@@ -30,7 +31,7 @@ const CountryShow = (props) => {
         
         
         
-    }, [params.id, url] )
+    }, [params.id, url, map, isMapLoaded] )
     
     
     
