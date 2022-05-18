@@ -7,6 +7,7 @@ const Nav = (props) => {
     const [search, setSearch] = useState(null)
 
 
+
     return (
         <div className="nav">
             <Link to='/' >

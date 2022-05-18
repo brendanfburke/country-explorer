@@ -31,11 +31,11 @@ const SearchResults = () => {
     
     
     const loaded = () => {
-        results.sort((a, b) => a.name.common.localeCompare(b.name.common))
         if (results.status === 404 ) {
             displayResults = <h1>Sorry no results, search again!</h1>
             
         } else {
+            results.sort((a, b) => a.name.common.localeCompare(b.name.common))
              displayResults =   results.map((country, idx) => {
                     return (
                         <div key={idx} className="search-result">

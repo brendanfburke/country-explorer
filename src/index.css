@@ -86,19 +86,11 @@ code {
   margin: 40px;
 }
 
-.country-index a {
-  text-decoration: none;
-  color: black;
-}
-
-.country-index a:hover {
-  text-decoration: underline;
-}
-
 .country-index button {
   background-color: #ebebeb;
   margin: 5px;
   border: 0;
+  cursor: pointer;
 }
 
 .country {
