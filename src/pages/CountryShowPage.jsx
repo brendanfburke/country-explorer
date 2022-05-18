@@ -17,7 +17,7 @@ const CountryShow = (props) => {
     
     useEffect(() => {
         const getCountries = async () => {
-            const response = await fetch(`${url}${params.id}`)
+            const response = await fetch(`${url}${params.id}?fullText=true`)
             const data = await response.json()
             setCountries(data)
         };
@@ -35,17 +35,22 @@ const CountryShow = (props) => {
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
     })
     const loaded = () => {
-        const center = { lat: countries[0].capitalInfo.latlng[0], lng: countries[0].capitalInfo.latlng[1] }
+        const center = { lat: countries[0].latlng[0], lng: countries[0].latlng[1] }
+        console.log(center)
         
     
-        
-        
-        
-            
-            
-        
-        
         const country = countries[0]
+        let capital
+        
+       if (!country.capital) {
+           capital = <p>{country.name.common} has no capital</p>
+       } else {
+           capital = <p>The capital of {country.name.common} is <strong>{country.capital}</strong>  </p>
+       }
+            
+            
+        
+        
 
         return (
             <div className="country">
@@ -54,8 +59,7 @@ const CountryShow = (props) => {
                 <img className="show-page-flag" src={country.flags.svg} alt={`Flag of ${country.name.common}`} />
                 <p>In {country.name.common} they drive on the {country.car.side} side of the road</p>
                 <p>The population of {country.name.common} is <strong>{country.population}</strong>  </p>
-                {/* TODO: update the following line to have a conditional that doesn't render if the capital is blank */}
-                <p>The capital of {country.name.common} is <strong>{country.capital}</strong> </p>
+                {capital}
                 <GoogleMap zoom={8} center={center} mapContainerClassName="map-container">
                     <Marker position={center} />
                 </GoogleMap>
