@@ -7,17 +7,15 @@ import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 const CountryShow = (props) => {
     const [countries, setCountries] = useState(null)
     // eslint-disable-next-line max-len
-    const [map, setMap] = useState(null)
 
     const params = useParams()
 
     const url = 'https://restcountries.com/v3.1/name/'
     
     
-    
     const isMapLoaded = useLoadScript({
-            googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
-        })
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
+    })
     
     useEffect(() => {
         const getCountries = async () => {
@@ -26,12 +24,11 @@ const CountryShow = (props) => {
             setCountries(data)
         };
         getCountries();
-        setMap(isMapLoaded)
                 
         
         
         
-    }, [params.id, url, map, isMapLoaded] )
+    }, [params.id, url, isMapLoaded] )
     
     
     
