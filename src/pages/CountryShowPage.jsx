@@ -12,7 +12,7 @@ const CountryShow = (props) => {
 
     const url = 'https://restcountries.com/v3.1/name/'
     
-    
+
     const isMapLoaded = useLoadScript({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
     })
@@ -36,9 +36,13 @@ const CountryShow = (props) => {
     const loaded = () => {
         let center
         let zoom
+
+        
         
     
         const country = countries[0]
+     
+
         let capital
         
        if (!country.capital) {

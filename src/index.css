@@ -43,10 +43,10 @@ code {
 }
 
 .flag-index-flag {
-  animation: flag-appear 0.5s linear;
+  animation: slow-appear 0.5s linear;
 }
 
-@keyframes flag-appear {
+@keyframes slow-appear {
   0% {
     transform: scale(0);
   }
@@ -106,6 +106,7 @@ code {
   margin: 5px;
   border: 0;
   cursor: pointer;
+  animation: slow-appear 0.3s linear;
 }
 
 .country {
@@ -177,6 +178,7 @@ code {
   padding: 3px;
   width: 20vw;
   box-shadow: 5px 5px #128337;
+  animation: slow-appear 0.5s linear;
 }
 
 .continent-country p,
