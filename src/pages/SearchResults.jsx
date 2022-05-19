@@ -36,17 +36,20 @@ const SearchResults = () => {
             
         } else {
             results.sort((a, b) => a.name.common.localeCompare(b.name.common))
-             displayResults =   results.map((country, idx) => {
-                    return (
-                        <div key={idx} className="search-result">
-                            <Link to={`/${country.name.common}`} >
-                                <h2>{country.name.common}</h2>
-                            </Link>
-                            <h3>{country.name.official}</h3>
-        
-                        </div>
-                    )
-                })
+            return (
+            <div className="search-results-container">
+                {displayResults =   results.map((country, idx) => {
+                       return (
+                           <div key={idx} className="continent-country">
+                               <Link to={`/${country.name.common}`} >
+                                   <p>{country.name.common}</p>
+                               </Link>
+           
+                           </div>
+                       )
+                   })}
+            </div>
+            )
         }
         
         return displayResults

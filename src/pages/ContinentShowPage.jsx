@@ -11,7 +11,6 @@ const ContinentShow = () => {
 
     const url = 'https://restcountries.com/v3.1/all'
 
-    console.log(params.id)
 
     const getContinent = async () => {
         const response = await fetch(url)

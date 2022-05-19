@@ -30,9 +30,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'A') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -46,9 +48,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'B') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -62,9 +66,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'C') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -78,9 +84,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'D') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -94,9 +102,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'E') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -110,9 +120,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'F') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -126,9 +138,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'G') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -142,9 +156,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'H') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -158,9 +174,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'I') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -174,9 +192,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'J') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -190,9 +210,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'K') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -206,9 +228,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'L') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -222,9 +246,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'M') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -238,9 +264,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'N') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -254,9 +282,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'O') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -270,9 +300,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'P') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -286,9 +318,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'Q') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -302,9 +336,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'R') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -318,9 +354,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'S') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -334,9 +372,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'W') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -350,9 +390,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'T') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -366,9 +408,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'U') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -382,9 +426,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'V') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -398,9 +444,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'W') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -414,9 +462,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'X') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -430,9 +480,11 @@ const CountryIndex = (props) => {
                         if (country.name.common[0] === 'Y') {
                             return (
                                 
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null
@@ -445,10 +497,11 @@ const CountryIndex = (props) => {
                         
                         if (country.name.common[0] === 'Z') {
                             return (
-                                
-                                <Link key={idx} to={`/${country.name.common}`} >
-                                    <button>{country.name.common}</button>
-                                </Link>
+                                <div className="continent-country">
+                                    <Link key={idx} to={`/${country.name.common}`} >
+                                        <p>{country.name.common}</p>
+                                    </Link>
+                                </div>
                             )
                         } 
                         return null

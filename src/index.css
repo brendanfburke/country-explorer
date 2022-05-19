@@ -10,6 +10,10 @@ body {
   align-items: center;
 }
 
+body a:hover {
+  text-decoration: underline;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -36,24 +40,20 @@ code {
   font-size: 4em;
   padding: 40px;
   justify-content: center;
+  text-decoration: none;
 }
 
 .flag-index a {
   text-decoration: none;
 }
 
-.flag-index-flag {
-  animation: slow-appear 0.5s linear;
+.flag-index a:hover {
+  text-decoration: none;
 }
 
-@keyframes slow-appear {
-  0% {
-    transform: scale(0);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+.flag-index-flag {
+  animation: slow-appear 0.5s linear;
+  text-decoration: none;
 }
 
 .continents-container {
@@ -134,10 +134,17 @@ code {
 
 .search-box {
   align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .search-input {
   font-family: "Raleway", sans-serif;
+}
+
+.search-title {
+  color: black;
 }
 
 .search-button {
@@ -155,6 +162,10 @@ code {
 
 .home-container {
   align-self: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .continent-container {
@@ -185,4 +196,25 @@ code {
 a {
   color: black;
   text-decoration: none;
+}
+
+.search-results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.random-country {
+  animation: slow-appear 0.3s linear;
+}
+
+@keyframes slow-appear {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

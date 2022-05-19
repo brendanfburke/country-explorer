@@ -37,13 +37,16 @@ const Home = (props) => {
             sortedPopulations.sort((a, b) => b-a)
         }
         
+        const randomNum = Math.floor(Math.random() * (countries.length + 1))
+
 
         sortPopulation();
 
 
         return (
             <div className="home-container">
-                <h1>Home</h1>
+                <h1>Welcome to Country Explorer</h1>
+                <h2> Find your way</h2>
                 {countries.map((country, idx) => {
                     if(country.population === sortedPopulations[0]) {
                         return (
@@ -63,6 +66,14 @@ const Home = (props) => {
                     }
                     return null
                 })}
+
+                <div className="random-country">
+                    <h2>Explore a random country</h2>
+                    <Link to={`/${countries[randomNum].name.common}`} >
+                    <h4>{countries[randomNum].name.common}</h4>
+                    </Link>
+                    <p>{countries[randomNum].population} people live in {countries[randomNum].name.common}</p>
+                </div>
             </div>
         )
     }
