@@ -26,6 +26,7 @@ code {
   height: auto;
   border: 1px solid black;
   align-self: center;
+  box-shadow: 2px 2px #6da9d2;
 }
 
 .flag-index {
@@ -39,6 +40,20 @@ code {
 
 .flag-index a {
   text-decoration: none;
+}
+
+.flag-index-flag {
+  animation: slow-appear 0.5s linear;
+}
+
+@keyframes slow-appear {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .continents-container {
@@ -91,6 +106,7 @@ code {
   margin: 5px;
   border: 0;
   cursor: pointer;
+  animation: slow-appear 0.3s linear;
 }
 
 .country {
@@ -100,10 +116,8 @@ code {
 
 .map-container {
   align-self: center;
-  width: 40vw;
+  width: 80vw;
   height: 40vh;
-  border: 4px solid black;
-  border-radius: 10px;
   margin-bottom: 50px;
 }
 
@@ -123,7 +137,52 @@ code {
 }
 
 .search-input {
+  font-family: "Raleway", sans-serif;
 }
 
 .search-button {
+  /* box-shadow: 2px 2px #128337; */
+  background-color: white;
+  border-radius: 2px;
+  font-family: "Raleway", sans-serif;
+}
+
+.continents-sidebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.home-container {
+  align-self: auto;
+}
+
+.continent-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1em;
+  padding: 10vw;
+  justify-content: space-around;
+}
+
+.continent-country {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 1vw;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 3px;
+  width: 20vw;
+  box-shadow: 5px 5px #128337;
+  animation: slow-appear 0.5s linear;
+}
+
+.continent-country p,
+a {
+  color: black;
+  text-decoration: none;
 }
