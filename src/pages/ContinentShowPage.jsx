@@ -41,7 +41,7 @@ const ContinentShow = () => {
                            </div>
                        )
                    }
-                   
+                   return null
                })}
 
                 </div>
