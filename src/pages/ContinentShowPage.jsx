@@ -32,7 +32,7 @@ const ContinentShow = () => {
                 <ContinentsSidebar />
                 <div className="continent-container">
                {continent.map((continent, idx) => {
-                   if (continent.continents[0] == params.id) {
+                   if (continent.continents[0] === params.id) {
                        return (
                            <div className="continent-country">
                                <Link to={`/${continent.name.common}`} >
