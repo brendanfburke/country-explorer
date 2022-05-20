@@ -22,6 +22,11 @@ The country index page allows the user to explore all countries alphabetically.
 
 ![Screen Shot 2022-05-20 at 8 51 25 AM](https://user-images.githubusercontent.com/101018068/169532241-1238b629-666c-4feb-80ac-973ac294010a.png)
 
+The individual country page will give you some interesting information about the country, as well as a google maps component for further exploration
+
+![Screen Shot 2022-05-20 at 9 24 17 AM](https://user-images.githubusercontent.com/101018068/169537489-fdb5c58c-8483-4295-9747-4dc3ed8626a7.png)
+
+
 The continents index allows users to select a continent and view all of the member countries. Australia has been added into the more comprehensive "Oceania" category. 
 
 ![Screen Shot 2022-05-20 at 8 51 34 AM](https://user-images.githubusercontent.com/101018068/169532416-eafe53bd-bc4f-4f9e-bc51-084e3a8830eb.png)
