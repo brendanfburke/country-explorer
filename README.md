@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Country Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## A one stop shop for gathering useful information about the countries of the World
 
-In the project directory, you can run:
 
-### `npm start`
+### Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This website serves as an easy to navigate resource for anyone looking to learn about any country they may be curious about. A user can look up a country alphabetically, by continent, peruse the colorful flags, or search for a country by name. The site conveniently features a Google maps integration for further exploration of any region that the user may find themselves in.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technologies Used
 
-### `npm test`
+This site was built using React, CSS, HTML, [Rest Countries API](https://restcountries.com/), and the [Google Maps API](https://developers.google.com/maps).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Visuals 
 
-### `npm run build`
+The home page is intended to give a brief glimpse into the type of data the site can provide you. The page also includes a random country every time a user navigates to the page. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screen Shot 2022-05-20 at 8 51 15 AM](https://user-images.githubusercontent.com/101018068/169532091-51b32dd0-74db-46b5-8752-fed3cdf141aa.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The country index page allows the user to explore all countries alphabetically. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screen Shot 2022-05-20 at 8 51 25 AM](https://user-images.githubusercontent.com/101018068/169532241-1238b629-666c-4feb-80ac-973ac294010a.png)
 
-### `npm run eject`
+The continents index allows users to select a continent and view all of the member countries. Australia has been added into the more comprehensive "Oceania" category. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screen Shot 2022-05-20 at 8 51 34 AM](https://user-images.githubusercontent.com/101018068/169532416-eafe53bd-bc4f-4f9e-bc51-084e3a8830eb.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The flags index allows users to see every national flag in alpabetical order. Each flag is a link to that countries page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screen Shot 2022-05-20 at 8 51 42 AM](https://user-images.githubusercontent.com/101018068/169532566-88358338-f045-4144-b774-3c0d98cdbead.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+When a user types a complete or partial name into the search bar, a search results page will load any relevant countries. Below you will see the search term "alb" has returned both "Albania" and "Svalbard".
 
-## Learn More
+![Screen Shot 2022-05-20 at 8 51 54 AM](https://user-images.githubusercontent.com/101018068/169532899-57d5e130-8660-46dc-8fd8-8837eb0390f4.png)
+ 
+### Deployed Site 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can visit [Country Explorer](https://main--fantastic-starlight-f577fb.netlify.app/) to try it out for yourself!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation Guidelines
 
-### Code Splitting
+If you wish to download the source code for this application and modify it for your own use, feel free to fork and clone it down to your own machine. Run 'npm i' to install the various dependencies that I used. You will need to register with Google Developers for your own maps API key, which will need to be stored in a secured .env file. Rest countries, very generously, does not require authorization to access their API. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Contribution Guidelines
 
-### Analyzing the Bundle Size
+I am very open to collaboration on this project, so please feel free to reach out if you have any ideas about the direction that this project should take in the future. If you'd like to write your own code, please make a pull request on my main repo with a detailed comment providing the details of your commit. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
