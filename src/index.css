@@ -114,7 +114,115 @@ body a:hover {
   }
 }
 
-/* 
+@media only screen and (min-width: 650px) {
+  .mobile-show {
+    display: none;
+  }
+}
+
+.show-page-flag {
+  height: 20vh;
+}
+
+.home-container {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.continent-show-container {
+  width: 100vw;
+}
+
+.continent-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1em;
+  padding: 10vw;
+  justify-content: space-around;
+}
+
+.continents-sidebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.continent-country {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 1vw;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 3px;
+  width: 20vw;
+  box-shadow: 5px 5px #128337;
+  animation: slow-appear 0.5s linear;
+}
+
+.countries-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.random-country {
+  animation: slow-appear 0.3s linear;
+}
+
+.country-index {
+  width: 100vw;
+}
+
+.countries-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1em;
+  padding: 10vw;
+  justify-content: space-around;
+}
+
+.flag-index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 4em;
+  padding: 40px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.flag-index a {
+  text-decoration: none;
+}
+
+.flag-index a:hover {
+  text-decoration: none;
+}
+
+.flag-index-flag {
+  animation: slow-appear 0.5s linear;
+  text-decoration: none;
+}
+
+@keyframes slow-appear {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* s
 body a:hover {
   text-decoration: underline;
 }
@@ -161,11 +269,6 @@ code {
   text-decoration: none;
 }
 
-.continents-container {
-  display: flex;
-  flex-direction: row;
-  margin: 50px;
-}
 
 .continents-container h2 {
   font-size: 1.5em;
@@ -273,14 +376,6 @@ code {
   justify-content: center;
 }
 
-.continent-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-size: 1em;
-  padding: 10vw;
-  justify-content: space-around;
-}
 
 .continent-country {
   display: flex;
