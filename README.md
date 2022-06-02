@@ -41,7 +41,7 @@ When a user types a complete or partial name into the search bar, a search resul
  
 ### Deployed Site 
 
-You can visit [Country Explorer](https://main--fantastic-starlight-f577fb.netlify.app/) to try it out for yourself!
+You can visit [Country Explorer](https://country-explorer-brendan-burke.netlify.app/) to try it out for yourself!
 
 ### Installation Guidelines
 
