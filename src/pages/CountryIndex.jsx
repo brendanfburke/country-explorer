@@ -40,6 +40,7 @@ const CountryIndex = (props) => {
                            </div>
                             )
                         }
+                        return null
                     })}
                 </div>
 

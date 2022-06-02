@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Search from "../components/Search";
 
 
 const Home = (props) => {
 
     const [countries, setCountries] = useState(null)
-    const [search, setSearch] = useState(null)
 
     const url = 'https://restcountries.com/v3.1/all'
     
@@ -43,25 +43,19 @@ const Home = (props) => {
 
         sortPopulation();
 
-        const keyDown = (e) => {
-            console.log(e.keycode)
-        }
+        // const keyDown = (e) => {
+        //     if (e.key === 'Enter') {
+        //         navigate(`/search/${search}`)
+        //     }
+        // }
 
 
         return (
-            <div className="home-container">
+            <div  className="home-container">
                 <div className="home-header">
                     <h1>Welcome to Country Explorer</h1>
                     <h2> Find your way</h2>
-                    <div className="search-box">
-                    {/* <div className="search-title" >Find a country</div> */}
-                        <input className="search-input" placeholder="Search here..." type="text" onChange={e => {
-                            setSearch(e.target.value)
-                        }} />
-                        <Link to={`/search/${search}`} >
-                            <button   className="search-button">Search</button>
-                        </Link>
-                    </div>
+                    <Search />
                 </div>
                 {countries.map((country, idx) => {
                     if(country.population === sortedPopulations[0]) {
