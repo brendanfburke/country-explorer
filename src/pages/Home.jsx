@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Search from "../components/Search";
 
 
 const Home = (props) => {
@@ -42,11 +43,20 @@ const Home = (props) => {
 
         sortPopulation();
 
+        // const keyDown = (e) => {
+        //     if (e.key === 'Enter') {
+        //         navigate(`/search/${search}`)
+        //     }
+        // }
+
 
         return (
-            <div className="home-container">
-                <h1>Welcome to Country Explorer</h1>
-                <h2> Find your way</h2>
+            <div  className="home-container">
+                <div className="home-header">
+                    <h1>Welcome to Country Explorer</h1>
+                    <h2> Find your way</h2>
+                    <Search />
+                </div>
                 {countries.map((country, idx) => {
                     if(country.population === sortedPopulations[0]) {
                         return (

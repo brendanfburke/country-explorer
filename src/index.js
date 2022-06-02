@@ -19,7 +19,9 @@ root.render(
      <Routes>
        <Route path='/' element={<App />} >
          <Route index element={<Home />} />
-         <Route path='/countries' element={<CountryIndex />} />
+         <Route path='/countries' element={<CountryIndex />} >
+           <Route path=':id' element={<CountryIndex />} />
+         </Route>
          <Route path='/continents' element={<ContinentShow />} >
            <Route path=':id' element={<ContinentShow />} />
          </Route>
