@@ -50,7 +50,7 @@ const CountryIndex = (props) => {
 
     const loading = () => {
         return (
-            <img className="loading" src="https://c.tenor.com/hlKEXPvlX48AAAAi/loading-loader.gif" alt='loading gif' />
+            <h1>Loading....</h1>
         )
     }
 

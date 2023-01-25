@@ -57,25 +57,28 @@ const Home = (props) => {
                     <h2> Find your way</h2>
                     <Search />
                 </div>
-                {countries.map((country, idx) => {
-                    if(country.population === sortedPopulations[0]) {
-                        return (
-                            <div key={idx}>
-                                <h4>The country with the highest population is: <Link to={`/${country.name.common}`}><h4>{country.name.common}</h4></Link> </h4>
-                                <p>{sortedPopulations[0]} people live in {country.name.common}</p>
-                            </div>
-                        )
-                    } 
-                    if (country.population === sortedPopulations[247]) {
-                        return (
-                            <div key={idx}>
-                                <h4>The country with the lowest population is: <Link to={`/${country.name.common}`}><h4>{country.name.common}</h4></Link> </h4>
-                                <p>{sortedPopulations[247]} people live in {country.name.common}</p>
-                            </div>
-                        )
-                    }
-                    return null
-                })}
+                <div className="population-card-container">
+                    {countries.map((country, idx) => {
+                        if(country.population === sortedPopulations[0]) {
+                            return (
+                                <div className="population-card" key={idx}>
+                                    <h4>The country with the highest population is: <Link to={`/${country.name.common}`}><h4>{country.name.common}</h4></Link> </h4>
+                                    <p>{sortedPopulations[0]} people live in {country.name.common}</p>
+                                </div>
+                            )
+                        } 
+                        if (country.population === sortedPopulations[247]) {
+                            return (
+                                <div className="population-card" key={idx}>
+                                    <h4>The country with the lowest population is: <Link to={`/${country.name.common}`}><h4>{country.name.common}</h4></Link> </h4>
+                                    <p>{sortedPopulations[247]} people live in {country.name.common}</p>
+                                </div>
+                            )
+                        }
+                        return null
+                    })}
+
+                </div>
 
                 <div className="random-country">
                     <h2>Explore a random country</h2>
@@ -90,7 +93,7 @@ const Home = (props) => {
 
     const loading = () => {
         return (
-            <img className="loading" src="https://c.tenor.com/hlKEXPvlX48AAAAi/loading-loader.gif" alt='loading gif' />
+            <h1>Loading....</h1>
 
         )
     }
