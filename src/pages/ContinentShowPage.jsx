@@ -27,17 +27,20 @@ const ContinentShow = () => {
     const loaded = () => {
         continent.sort((a, b) => a.name.common.localeCompare(b.name.common))
         return (
-            <div className="continent-show-container">
+            <div className="continent-container">
                 <ContinentsSidebar />
-                <div className="continent-container">
+                <div className="continent-box">
                {continent.map((continent, idx) => {
                    if (continent.continents[0] === params.id) {
                        return (
-                           <div className="continent-country">
+                           <div className="continent-card">
                                <Link to={`/${continent.name.common}`} >
                                    <p>{continent.name.common}</p>
                                </Link>
+                               <img className="continent-index-flag" src={continent.flags.svg} alt="" />
+
                            </div>
+
                        )
                    }
                    return null

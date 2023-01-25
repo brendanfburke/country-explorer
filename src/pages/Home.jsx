@@ -38,16 +38,17 @@ const Home = (props) => {
             sortedPopulations.sort((a, b) => b-a)
         }
         
-        const randomNum = Math.floor(Math.random() * (countries.length + 1))
 
+        const numArr = []
+
+        for (let i = 0; i < 6; i++) {
+            numArr.push( Math.floor(Math.random() * (countries.length + 1)))
+        }
+
+        console.log(numArr)
 
         sortPopulation();
 
-        // const keyDown = (e) => {
-        //     if (e.key === 'Enter') {
-        //         navigate(`/search/${search}`)
-        //     }
-        // }
 
 
         return (
@@ -62,16 +63,22 @@ const Home = (props) => {
                         if(country.population === sortedPopulations[0]) {
                             return (
                                 <div className="population-card" key={idx}>
-                                    <h4>The country with the highest population is: <Link to={`/${country.name.common}`}><h4>{country.name.common}</h4></Link> </h4>
-                                    <p>{sortedPopulations[0]} people live in {country.name.common}</p>
+                                    <div className="pop-left">
+                                        <h2>The country with the highest population is: <Link to={`/${country.name.common}`}><h2 className="country-link">{country.name.common}</h2></Link> </h2>
+                                        <p>{sortedPopulations[0].toLocaleString()} people live in {country.name.common}</p>
+                                    </div>
+                                    <img className="pop-image" src={country.flags.svg} alt="" />
                                 </div>
                             )
                         } 
                         if (country.population === sortedPopulations[247]) {
                             return (
                                 <div className="population-card" key={idx}>
-                                    <h4>The country with the lowest population is: <Link to={`/${country.name.common}`}><h4>{country.name.common}</h4></Link> </h4>
-                                    <p>{sortedPopulations[247]} people live in {country.name.common}</p>
+                                    <div className="pop-left">
+                                        <h2>The country with the lowest population is: <Link to={`/${country.name.common}`}><h2 className="country-link">{country.name.common}</h2></Link> </h2>
+                                        <p>{sortedPopulations[247].toLocaleString()} people live in {country.name.common}</p>
+                                    </div>
+                                    <img className="pop-image" src={country.flags.svg} alt="" />
                                 </div>
                             )
                         }
@@ -80,12 +87,38 @@ const Home = (props) => {
 
                 </div>
 
-                <div className="random-country">
-                    <h2>Explore a random country</h2>
-                    <Link to={`/${countries[randomNum].name.common}`} >
-                    <h4>{countries[randomNum].name.common}</h4>
-                    </Link>
-                    <p>{countries[randomNum].population} people live in {countries[randomNum].name.common}</p>
+                
+                <div className="random-container">
+                    <div className="random-country1">
+                        <div className="pop-left">
+                            <h2>Explore a random country</h2>
+                            <Link to={`/${countries[numArr[0]].name.common}`} >
+                            <h2>{countries[numArr[0]].name.common}</h2>
+                            </Link>
+                            <p>{countries[numArr[0]].population.toLocaleString()} people live in {countries[numArr[0]].name.common}</p>
+                        </div>
+                        <img className="random-image" src={countries[numArr[0]].flags.svg} alt="" />
+                    </div>
+                    <div className="random-country2">
+                        <div className="pop-left">
+                            <h2>Explore a random country</h2>
+                            <Link to={`/${countries[numArr[1]].name.common}`} >
+                            <h2>{countries[numArr[1]].name.common}</h2>
+                            </Link>
+                            <p>{countries[numArr[1]].population.toLocaleString()} people live in {countries[numArr[1]].name.common}</p>
+                        </div>
+                        <img className="random-image" src={countries[numArr[1]].flags.svg} alt="" />
+                    </div>
+                    <div className="random-country3">
+                        <div className="pop-left">
+                            <h2>Explore a random country</h2>
+                            <Link to={`/${countries[numArr[2]].name.common}`} >
+                            <h2>{countries[numArr[2]].name.common}</h2>
+                            </Link>
+                            <p>{countries[numArr[2]].population.toLocaleString()} people live in {countries[numArr[2]].name.common}</p>
+                        </div>
+                        <img className="random-image" src={countries[numArr[2]].flags.svg} alt="" />
+                    </div>
                 </div>
             </div>
         )

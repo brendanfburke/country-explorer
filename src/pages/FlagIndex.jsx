@@ -26,7 +26,7 @@ const FlagIndex = (props) => {
                 {countries.map((country, idx) => {
                     return (
                         <Link key={idx} to={`/${country.name.common}`} >
-                            <div className="flag-index-flag">{country.flag}</ div>
+                            <img className="flags" src={country.flags.svg} alt="" />
                         </Link>
                     )
                 })}
