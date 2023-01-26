@@ -8,7 +8,6 @@ import { useNavigate } from "react-router";
 
 const CountryIndex = (props) => {
     const [countries, setCountries] = useState(null)
-    const [letter, setLetter] = useState('')
 
     const navigate = useNavigate()
 
@@ -29,7 +28,6 @@ const CountryIndex = (props) => {
     
     const handleChange = (e) => {
         let val = e.target.value
-        setLetter(val)
         navigate(`/countries/${val}`)
 
     }

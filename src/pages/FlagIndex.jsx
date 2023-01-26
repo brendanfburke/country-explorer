@@ -22,14 +22,26 @@ const FlagIndex = (props) => {
     const loaded = () => {
         countries.sort((a, b) => a.name.common.localeCompare(b.name.common))
         return (
-            <div className="flag-index">
-                {countries.map((country, idx) => {
-                    return (
-                        <Link key={idx} to={`/${country.name.common}`} >
-                            <img className="flags" src={country.flags.svg} alt="" />
-                        </Link>
-                    )
-                })}
+            <div className="flag-container">
+                <div className="flag-index">
+                    {countries.map((country, idx) => {
+                        return (
+                            <Link key={idx} to={`/${country.name.common}`} >
+                                <img className="flags" src={country.flags.svg} alt="" />
+                            </Link>
+                        )
+                    })}
+                </div>
+                
+                <div className="mobile-flag-index">
+                    {countries.map((country, idx) => {
+                        return (
+                            <Link key={idx} to={`/${country.name.common}`} >
+                                <div className="mobile-flag">{country.flag}</div>
+                            </Link>
+                        )
+                    })}
+                </div>
             </div>
         )
     }

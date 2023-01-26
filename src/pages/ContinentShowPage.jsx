@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import { useState, useEffect } from "react";
 import ContinentsSidebar from "../components/Continents";
 
@@ -11,7 +11,7 @@ const ContinentShow = () => {
 
     const url = 'https://restcountries.com/v3.1/all'
 
-
+    const navigate = useNavigate()
     const getContinent = async () => {
         const response = await fetch(url)
         const data = await response.json()
@@ -22,6 +22,12 @@ const ContinentShow = () => {
         getContinent()
     }, [])
 
+    const handleChange = (e) => {
+        let val = e.target.value
+        navigate(`/continents/${val}`)
+
+    }
+
 
     
     const loaded = () => {
@@ -29,6 +35,16 @@ const ContinentShow = () => {
         return (
             <div className="continent-container">
                 <ContinentsSidebar />
+                <select onChange={handleChange} className="continent-selector" name="" id="">
+                    <option value="#">Choose a Continent</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Africa">Africa</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
+                    <option value="Oceania">Oceania</option>
+                    <option value="Antarctica">Antarctica</option>
+                </select>
                 <div className="continent-box">
                {continent.map((continent, idx) => {
                    if (continent.continents[0] === params.id) {

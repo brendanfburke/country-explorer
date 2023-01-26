@@ -128,7 +128,7 @@ const CountryShow = (props) => {
                     <div className="showpage-info">
                         {subRegion}
                         <p>In {country.name.common} they drive on the {country.car.side} side of the road</p>
-                        <p>The population of {country.name.common} is <strong>{country.population}</strong>  </p>
+                        <p>The population of {country.name.common} is <strong>{country.population.toLocaleString()}</strong>  </p>
                         {capital}
                         {un}
                         <Lang />
