@@ -162,6 +162,7 @@ body a:hover {
     margin: 10px;
     justify-content: space-around;
     border-radius: 15px;
+    max-height: 200px;
   }
 
   .search-index-flag {
@@ -464,6 +465,10 @@ body a:hover {
     background-color: rgba(0, 0, 0, 0.125);
   }
 
+  .countries-bar a {
+    text-decoration: none;
+  }
+
   .letter-selector {
     display: none;
   }
@@ -609,6 +614,10 @@ body a:hover {
     width: 100vw;
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.125);
+  }
+
+  .continents-bar a {
+    text-decoration: none;
   }
 
   .continent-selector {
