@@ -17,7 +17,7 @@ body {
 
 body a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 body a:hover {
@@ -49,6 +49,10 @@ body a:hover {
   width: 100%;
 }
 
+.nav a {
+  text-decoration: none;
+}
+
 .mobile-nav {
   display: none;
 }
@@ -72,6 +76,7 @@ body a:hover {
     flex-direction: column;
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
   }
 
   .icon-box {
