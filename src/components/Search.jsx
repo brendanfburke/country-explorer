@@ -12,7 +12,6 @@ const Search = () => {
     const keyDown = (e) => {
         if (e.keyCode === 13) {
             navigate(`/search/${search}`)
-            // console.log("enter")
         }
     }
 

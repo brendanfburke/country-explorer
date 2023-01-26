@@ -45,7 +45,6 @@ const Home = (props) => {
             numArr.push( Math.floor(Math.random() * (countries.length + 1)))
         }
 
-        console.log(numArr)
 
         sortPopulation();
 

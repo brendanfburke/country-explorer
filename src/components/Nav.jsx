@@ -5,15 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faHome } from '@fortawesome/free-solid-svg-icons'
 const Nav = (props) => {
 
-    const [navDrawer, setNavDrawer] = useState("open")
+    const [navDrawer, setNavDrawer] = useState("closed")
 
     const drawerClicker = () => {
-        if (navDrawer === "open") {
-            setNavDrawer("closed")
-            console.log("closed")
-        } else if (navDrawer === "closed") {
+        if (navDrawer === "closed") {
             setNavDrawer("open")
-            console.log("open")
+        } else if (navDrawer === "open") {
+            setNavDrawer("closed")
         }
     }
     const homeClicker = () => {
@@ -65,36 +63,7 @@ const Nav = (props) => {
 
 
 
-    // return (
-    //     <div className="nav">
-
-    //         <Link className="little-screen-show"  to='/' >
-    //             <FontAwesomeIcon className="little-screen-show" icon={faHome} size='lg' />
-    //         </Link>
-    //         <Link className="big-screen-show" to='/' >
-    //             <h2>Home</h2>
-    //         </Link>
-    //         <Link className="big-screen-show" to='/countries' >
-    //                 <h2>See All Countries</h2>
-    //         </Link>
-    //         <Link className="big-screen-show" to='/continents' >
-    //             <h2>See All Continents</h2>
-    //         </Link>
-    //         <Link className="big-screen-show" to='/flags' >
-    //             <h2>See All Flags</h2>
-    //         </Link>
-    //         <Link className={showLinks} to='/countries' >
-    //                 <h2>See All Countries</h2>
-    //         </Link>
-    //         <Link className={showLinks} to='/continents' >
-    //             <h2>See All Continents</h2>
-    //         </Link>
-    //         <Link className={showLinks} to='/flags' >
-    //             <h2>See All Flags</h2>
-    //         </Link>
-    //         <FontAwesomeIcon onClick={clicker} className="little-screen-show" icon={faBars} size='lg' />
-    //     </div>
-    // )
+    
 }
 
 export default Nav
