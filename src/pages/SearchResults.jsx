@@ -40,11 +40,11 @@ const SearchResults = () => {
             <div className="search-results-container">
                 {displayResults =   results.map((country, idx) => {
                        return (
-                           <div key={idx} className="continent-country">
-                               <Link to={`/${country.name.common}`} >
-                                   <p>{country.name.common}</p>
-                               </Link>
-           
+                           <div key={idx} className="search-card">
+                                <Link to={`/${country.name.common}`} >
+                                    <p>{country.name.common}</p>
+                                </Link>
+                                <img className="search-index-flag" src={country.flags.svg} alt="" />
                            </div>
                        )
                    })}
@@ -58,7 +58,7 @@ const SearchResults = () => {
 
     const loading = () => {
         return (
-            <img className="loading" src="https://c.tenor.com/hlKEXPvlX48AAAAi/loading-loader.gif" alt='loading gif' />
+            <h1>Loading....</h1>
 
         )
     }

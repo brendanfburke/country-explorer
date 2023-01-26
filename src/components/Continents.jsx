@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ContinentsSidebar = () => {
     return (
-        <div className="continents-sidebar">
+        <div className="continents-bar">
             <Link to='/continents/Europe' >
                 <p>Europe</p>
             </Link>
